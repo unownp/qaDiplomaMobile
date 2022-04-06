@@ -2,22 +2,18 @@ package np.qa.diplomaMobile.tests;
 
 import com.codeborne.selenide.Condition;
 import io.appium.java_client.AppiumBy;
-import io.appium.java_client.MobileBy;
-import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
 
-import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
-import static com.codeborne.selenide.Selectors.byClassName;
-import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$$;
 import static io.qameta.allure.Allure.step;
 
 
 public class AndroidSelenideTests extends TestBase {
+
+    @DisplayName("Мобильные тесты")
     @Test
-    void searchTest() {
+    void mobileTest() {
         step("Перевод", () -> {
 
             $(AppiumBy.id("ru.yandex.translate:id/et_input_field")).setValue("layer");
