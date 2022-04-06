@@ -49,8 +49,7 @@ public class LocalMobileDriver implements WebDriverProvider {
     private File downloadApk() {
         File apk = new File("apk/yandex.translate.apk");
         if (!apk.exists()) {
-            String url = "https://github.com/wikimedia/apps-android-wikipedia/" +
-                    "releases/download/latest/app-alpha-universal-release.apk?raw=true";
+            String url = "https://github.com/unownp/qaDiplomaMobile/blob/main/apk/yandex.translate.apk";
             try (InputStream in = new URL(url).openStream()) {
                 copyInputStreamToFile(in, apk);
             }

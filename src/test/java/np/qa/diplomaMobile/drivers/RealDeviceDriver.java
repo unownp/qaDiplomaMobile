@@ -36,8 +36,8 @@ public class RealDeviceDriver implements WebDriverProvider {
         options.setApp(app.getAbsolutePath());
         options.setLocale("en");
         options.setLanguage("en");
-        options.setAppPackage("org.wikipedia.alpha");
-        options.setAppActivity("org.wikipedia.main.MainActivity");
+        options.setAppPackage("ru.yandex.translate");
+        options.setAppActivity("ru.yandex.translate.ui.activities.MainActivity");
 
         try {
             return new AndroidDriver(new URL("http://localhost:4723/wd/hub"), options);
@@ -47,10 +47,9 @@ public class RealDeviceDriver implements WebDriverProvider {
     }
 
     private File downloadApk() {
-        File apk = new File("apk/app-alpha-universal-release.apk");
+        File apk = new File("apk/yandex.translate.apk");
         if (!apk.exists()) {
-            String url = "https://github.com/wikimedia/apps-android-wikipedia/" +
-                    "releases/download/latest/app-alpha-universal-release.apk?raw=true";
+            String url = "https://github.com/unownp/qaDiplomaMobile/blob/main/apk/yandex.translate.apk";
             try (InputStream in = new URL(url).openStream()) {
                 copyInputStreamToFile(in, apk);
             }
