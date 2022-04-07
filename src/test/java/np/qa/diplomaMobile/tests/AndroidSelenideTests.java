@@ -13,7 +13,7 @@ public class AndroidSelenideTests extends TestBase {
 
     @DisplayName("Мобильные тесты")
     @Test
-    void mobileTest() {
+    void searchTest() {
         step("Перевод", () -> {
 
             $(AppiumBy.id("ru.yandex.translate:id/et_input_field")).setValue("layer");

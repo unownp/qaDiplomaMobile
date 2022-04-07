@@ -6,9 +6,9 @@
 - [Технологии и инструменты](#rocket-технологии-и-инструменты)
 - [Реализованные проверки](#Реализованные-проверки)
 - [Jenkins job](#-Jenkins-job)
-- [Окружения](#-Окружения)
+- [Окружения](#-Запуск-тестов-из-терминала)
 - [Allure отчет](#-Allure-отчет)
-
+- [BrowserStack](#-BrowserStack)
 
 ## :rocket: Технологии и инструменты
 
@@ -27,53 +27,53 @@
 
 ## Реализованные проверки
 
-- ✓ Проверка даты регистрации.
-- ✓ Проверка комментариев.
-- ✓ Проверка постов юзеров.
-- ✓ Проверка создания нового юзера
-- ✓ Проверка существование юзеров
+- ✓ Проверка перевода.
+- ✓ Проверка смены языка.
+- ✓ Проверка настроек.
+
 
 ## <img src="images/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Jenkins job
-<a target="_blank" href="https://jenkins.autotests.cloud/job/apiTests/">Сборка в Jenkins</a>
+<a target="_blank" href="https://jenkins.autotests.cloud/job/qaDiplomaMobile/">Сборка в Jenkins</a>
 <p align="center">
-<a href="https://jenkins.autotests.cloud/job/apiTests/"><img src="images/jenkins_job.png" alt="Jenkins"/></a>
+<a href="https://jenkins.autotests.cloud/job/qaDiplomaMobile/"><img src="images/jenkins_job.png" alt="Jenkins"/></a>
 </p>
 
-## Параметры сборки в Jenkins:
+## Параметры сборки в Jenkins: 
 
-- browser (браузер, по умолчанию chrome)
-- browserVersion (версия браузера, по умолчанию 91.0) 
-- remoteUrl (Selenoid URL)
-- remoteState (дефолтно-true, если false - возможность запускать локально)
+- ENV (окружение)
+
 
 ## :computer: Запуск тестов из терминала
 
 Локальный и удаленный запуск:
 ```bash
-gradle clean test
+локально и удаленно
+gradle clean test -DdeviceHost=browserstack 
 ```
-
+```bash
+только локальный запуск через эмулятор
+gradle clean test -DdeviceHost=emulation 
+```
+```bash
+только локальный запуск на реальном устройстве
+gradle clean test -DdeviceHost=realDevice 
+```
 
 ## <img src="images/Allure_Report.svg" width="25" height="25"  alt="Allure"/></a> Allure отчет
 
-<a target="_blank" href="https://jenkins.autotests.cloud/job/apiTests/4/allure">Аллюр</a>
+<a target="_blank" href="https://jenkins.autotests.cloud/job/qaDiplomaMobile/5/allure/">Аллюр</a>
 
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/allure_main.png">
+<img title="Allure Results" src="images/allure_results.png">
 </p>
 
 
-## <img src="images/Allure_EE.svg" width="25" height="25"  alt="Allure TestOps"/></a> Allure testOps
+## <img src="images/browserstack.svg" width="25" height="25"  alt="BrowserStack"/></a> BrowserStack
 
-<a target="_blank" href="https://allure.autotests.cloud/project/1205/test-cases?treeId=0">Аллюр EE</a>
 <p align="center">
-<img title="Allure TestOps" src="images/allureTestOps.png">
+<img title="BrowserStack results" src="images/BrowserStack_results.png">
 </p>
 
-
-
-### <img src="images/Jira.svg" width="25" height="25"  alt="Jira"/></a> Jira
-<a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-365">Таск в Jira</a>
 <p align="center">
-<img title="Selenoid Video" src="images/JiraIssue.png"> 
+<img title="BrowserStack Video" src="images/browserStack_video.gif" width="250" height="250"  alt="video"> 
 </p>
