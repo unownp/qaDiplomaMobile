@@ -6,7 +6,7 @@
 - [Технологии и инструменты](#rocket-технологии-и-инструменты)
 - [Реализованные проверки](#Реализованные-проверки)
 - [Jenkins job](#-Jenkins-job)
-- [Окружения](#-Запуск-тестов-из-терминала)
+- [Окружения](#-computer-Запуск-тестов-из-терминала)
 - [Allure отчет](#-Allure-отчет)
 - [BrowserStack](#-BrowserStack)
 
@@ -35,7 +35,7 @@
 ## <img src="images/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Jenkins job
 <a target="_blank" href="https://jenkins.autotests.cloud/job/qaDiplomaMobile/">Сборка в Jenkins</a>
 <p align="center">
-<a href="https://jenkins.autotests.cloud/job/qaDiplomaMobile/"><img src="images/jenkins_job.png" alt="Jenkins"/></a>
+<a href="https://jenkins.autotests.cloud/job/qaDiplomaMobile/"><img src="images/Jenkins_job.png" alt="Jenkins"/></a>
 </p>
 
 ## Параметры сборки в Jenkins: 
@@ -64,7 +64,7 @@ gradle clean test -DdeviceHost=realDevice
 <a target="_blank" href="https://jenkins.autotests.cloud/job/qaDiplomaMobile/5/allure/">Аллюр</a>
 
 <p align="center">
-<img title="Allure Results" src="images/allure_results.png">
+<img title="Allure Results" src="images/Allure_results.png">
 </p>
 
 
@@ -75,5 +75,5 @@ gradle clean test -DdeviceHost=realDevice
 </p>
 
 <p align="center">
-<img title="BrowserStack Video" src="images/browserStack_video.gif" width="250" height="250"  alt="video"> 
+<img title="BrowserStack Video" src="images/BrowserStack_video.gif" width="250" height="250"  alt="video"> 
 </p>
