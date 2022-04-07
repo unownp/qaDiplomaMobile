@@ -6,7 +6,7 @@
 - [Технологии и инструменты](#rocket-технологии-и-инструменты)
 - [Реализованные проверки](#Реализованные-проверки)
 - [Jenkins job](#-Jenkins-job)
-- [Окружения](#-computer-Запуск-тестов-из-терминала)
+- [Окружения](#computer-Запуск-тестов-из-терминала)
 - [Allure отчет](#-Allure-отчет)
 - [BrowserStack](#-BrowserStack)
 
@@ -68,7 +68,7 @@ gradle clean test -DdeviceHost=realDevice
 </p>
 
 
-## <img src="images/browserstack.svg" width="25" height="25"  alt="BrowserStack"/></a> BrowserStack
+## <img src="images/Browserstack.svg" width="25" height="25"  alt="BrowserStack"/></a> BrowserStack
 
 <p align="center">
 <img title="BrowserStack results" src="images/BrowserStack_results.png">
