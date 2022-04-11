@@ -60,23 +60,4 @@ public class SelenoidMobileDriver implements WebDriverProvider {
         return new RemoteWebDriver(getSelenoidUrl(), options);
     }
 
-
-/* @Override
- @CheckReturnValue
- @Nonnull
- public WebDriver createDriver(DesiredCapabilities desiredCapabilities) {
-
-     desiredCapabilities.setCapability("platformName", "Android");
-     desiredCapabilities.setCapability("deviceName", "android");
-     desiredCapabilities.setCapability("version", "10.0");
-     desiredCapabilities.setCapability("locale", "en");
-     desiredCapabilities.setCapability("language", "en");
-     desiredCapabilities.setCapability("enableVNC", true);
-     desiredCapabilities.setCapability("enableVideo", true);
-     desiredCapabilities.setCapability("appPackage", "org.wikipedia.alpha");
-     desiredCapabilities.setCapability("appActivity", "org.wikipedia.main.MainActivity");
-     desiredCapabilities.setCapability("app", getApkUrl());
-
-     return new AndroidDriver(getSelenoidUrl(), desiredCapabilities);
- }*/
 }

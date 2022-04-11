@@ -23,21 +23,17 @@ public class TestBase {
 
         String deviceHost = System.getProperty("deviceHost");
 
-        if(deviceHost.equals("browserstack")){
+        if (deviceHost.equals("browserstack")) {
             Configuration.browser = BrowserStackMobileDriver.class.getName();
-        }
-        else if(deviceHost.equals("selenoid")){
+        } else if (deviceHost.equals("selenoid")) {
             Configuration.browser = SelenoidMobileDriver.class.getName();
-        }
-        else if(deviceHost.equals("realDevice")){
+        } else if (deviceHost.equals("realDevice")) {
             Configuration.browser = RealDeviceDriver.class.getName();
         }
-        if(deviceHost.equals("emulation")){
+        if (deviceHost.equals("emulation")) {
             Configuration.browser = LocalMobileDriver.class.getName();
         }
 
-//        Configuration.startMaximized = false;
-        Configuration.browserSize = null;
     }
 
     @BeforeEach
@@ -56,7 +52,7 @@ public class TestBase {
         closeWebDriver();
 
 
-        if(deviceHost.equals("browserstack")){
+        if (deviceHost.equals("browserstack")) {
             Attach.videoBrowserStack(sessionId);
         }
 
