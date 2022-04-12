@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static io.qameta.allure.Allure.step;
 
 
-public class AndroidSelenideTests extends TestBase {
+public class Tests extends TestBase {
 
     @DisplayName("Мобильные тесты")
     @Test
