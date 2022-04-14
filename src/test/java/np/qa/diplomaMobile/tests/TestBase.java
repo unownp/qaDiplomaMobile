@@ -56,9 +56,5 @@ public class TestBase {
             Attach.videoBrowserStack(sessionId);
         }
 
-        /*    else if(deviceHost.equals("selenoid")){
-            Attach.videoSelenoid(sessionId);
-        }*/
-
     }
 }
