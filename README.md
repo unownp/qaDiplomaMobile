@@ -75,5 +75,5 @@ gradle clean test -DdeviceHost=realDevice
 </p>
 
 <p align="center">
-<img title="BrowserStack Video" src="images/BrowserStack_video.gif" width="250" height="250"  alt="video"> 
+<img title="BrowserStack Video" src="images/BrowserStack_video.gif" width="1000" height="250"  alt="video"> 
 </p>
