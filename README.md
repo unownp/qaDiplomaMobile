@@ -1,4 +1,4 @@
-# Проект для домашки/диплома(mobile-часть)
+# Диплом(mobile)
 <a target="_blank" href="https://play.google.com/store/apps/details?id=ru.yandex.translate">Яндекс переводчик</a>
 
 ## :pushpin: Содержание:

@@ -9,8 +9,6 @@ repositories {
 
 def allureVersion = "2.17.3",
     selenideVersion = "6.3.4",
-//    selenideVersion = "5.25.0",
-//    appiumVersion = "8.0.0",
     appiumVersion = "8.0.0",
     junitVersion = "5.8.2",
     slf4jVersion = "1.7.32"
@@ -53,7 +51,6 @@ tasks.withType(Test) {
 
     testLogging {
         lifecycle {
-//            events "started", "failed"
             events "started", "skipped", "failed", "standard_error", "standard_out"
             exceptionFormat "short"
         }
